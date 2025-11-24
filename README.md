@@ -2,19 +2,6 @@ Terraform GCP Project: VM, Storage, VPC, and Firewall Setup
 
 This project demonstrates how to use Terraform to deploy and manage resources on Google Cloud Platform (GCP). The project includes creating virtual machines (VMs), a storage bucket, a VPC with subnets, and a firewall rule using Terraform modules.
 
-Project Structure
-.
-├── main.tf                # Root Terraform configuration
-├── variables.tf           # Root variables
-├── modules/
-│   ├── instances/
-│   │   ├── instances.tf    # VM resources
-│   │   ├── outputs.tf      # VM outputs
-│   │   └── variables.tf    # VM variables
-│   └── storage/
-│       ├── storage.tf      # Storage bucket
-│       ├── outputs.tf      # Storage outputs
-│       └── variables.tf    # Storage variables
 Modules
 Instances Module: Manages Google Compute Engine instances
 
@@ -35,13 +22,14 @@ Cloud Storage Bucket: Configured as Terraform remote backend
 
 Firewall Rule: Allows TCP traffic on port 80 from 0.0.0.0/0
 
-
 Usage
 
-Initialize Terraform: terraform init
+      Initialize Terraform: terraform init
 
-Plan changes: terraform plan
+      Plan changes: terraform plan
 
-Apply changes: terraform apply
+      Apply changes: terraform apply
 
-Destroy resources (optional): terraform destroy
+      Destroy resources (optional): terraform destroy
+
+This project demonstrates how to use Terraform to automate the deployment and management of cloud infrastructure on Google Cloud Platform (GCP). It shows how to create virtual machines, storage, networking, and security configurations in a modular and reusable way, using variables for flexibility. The project illustrates best practices in infrastructure-as-code, including automated provisioning, secure configuration, and organized resource management.
